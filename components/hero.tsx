@@ -1,9 +1,13 @@
 "use client"
+import { CONTENT_MAX_WIDTH, SECTION_SCROLL_MARGIN } from "@/lib/layout"
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-24 lg:pt-28 pb-16 lg:pb-24 bg-[#2C2449] text-white min-h-[90vh] flex items-center">
-      <div className="container max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-32 w-full">
+    <section
+      id="home"
+      className={`${SECTION_SCROLL_MARGIN} bg-[#2C2449] text-white min-h-[90vh] flex items-center`}
+    >
+      <div className={`${CONTENT_MAX_WIDTH} py-24 lg:py-32 w-full`}>
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-balance leading-tight">
             Welcome to <span className="text-[#BE232D]">Tared Ltd</span>

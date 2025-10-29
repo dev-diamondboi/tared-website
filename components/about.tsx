@@ -1,7 +1,12 @@
+import { CONTENT_MAX_WIDTH, SECTION_SCROLL_MARGIN, SECTION_VERTICAL_PADDING } from "@/lib/layout"
+
 export default function About() {
   return (
-    <section id="about" className="py-24 lg:py-40 bg-white">
-      <div className="container max-w-7xl mx-auto px-6 lg:px-8">
+    <section
+      id="about"
+      className={`${SECTION_SCROLL_MARGIN} ${SECTION_VERTICAL_PADDING} bg-white`}
+    >
+      <div className={CONTENT_MAX_WIDTH}>
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C2449] mb-6 text-balance">

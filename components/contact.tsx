@@ -3,6 +3,7 @@
 import type React from "react"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { useState } from "react"
+import { CONTENT_MAX_WIDTH, SECTION_SCROLL_MARGIN, SECTION_VERTICAL_PADDING } from "@/lib/layout"
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -17,8 +18,11 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 lg:py-40 bg-[#2C2449] text-white">
-      <div className="container max-w-7xl mx-auto px-6 lg:px-8">
+    <section
+      id="contact"
+      className={`${SECTION_SCROLL_MARGIN} ${SECTION_VERTICAL_PADDING} bg-[#2C2449] text-white`}
+    >
+      <div className={CONTENT_MAX_WIDTH}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-balance">

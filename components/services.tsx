@@ -1,4 +1,5 @@
 import { Briefcase, Users, TrendingUp, Award } from "lucide-react"
+import { CONTENT_MAX_WIDTH, SECTION_SCROLL_MARGIN, SECTION_VERTICAL_PADDING } from "@/lib/layout"
 
 const services = [
   {
@@ -25,8 +26,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 lg:py-40 bg-white">
-      <div className="container max-w-7xl mx-auto px-6 lg:px-8">
+    <section
+      id="services"
+      className={`${SECTION_SCROLL_MARGIN} ${SECTION_VERTICAL_PADDING} bg-white`}
+    >
+      <div className={CONTENT_MAX_WIDTH}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#2C2449] mb-6 text-balance">

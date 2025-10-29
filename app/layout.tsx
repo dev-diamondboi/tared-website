@@ -11,7 +11,6 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "Tared Ltd",
   description: "Professional business solutions and services",
-    generator: 'v0.app'
 }
 
 export default function RootLayout({
